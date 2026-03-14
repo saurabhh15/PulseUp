@@ -11,7 +11,7 @@
             }
         }
     ],
-    "routed":[
+    "routes":[
         {
             "src": "/(.*)",
             "dest": "server.js"
