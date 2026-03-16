@@ -5,7 +5,7 @@ import { addPost, getPost, likePost } from '../controller/postController.js'
 
 const postRouter = express.Router()
 
-postRouter.post('/add', upload.array('images'), 4, protect, addPost)
+postRouter.post('/add', upload.array('images'), protect, addPost)
 postRouter.get('/feed',  protect, getPost)
 postRouter.post('/like',  protect, likePost)
 
